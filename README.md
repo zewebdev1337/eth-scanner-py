@@ -2,7 +2,7 @@
 
 ### Usage
 
-[Generate Infura API Key](https://app.infura.io/) and store it in .env
+[Generate Infura API Key](https://app.infura.io/) and store it as APIKEY in ./.env
 
 `pip install -r req`
 
