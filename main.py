@@ -21,7 +21,7 @@ def handle_block(block_number):
     block = web3.eth.get_block(block_number, full_transactions=True)
     for tx in block.transactions:
         # Check if 'to' address is None, indicating contract creation
-        if tx['to'] is None:
+        if tx['to'] is None: # Comment out this line to listen for all events
             tx_hash = tx['hash'].hex()
             etherscan_link = f"https://etherscan.io/tx/{tx_hash}"
             print(f"New contract created with hash: [{tx_hash}]({etherscan_link})")
